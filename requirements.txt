@@ -1,0 +1,20 @@
+# ── Core web framework ────────────────────────────────────────────────────────
+fastapi>=0.100.0
+uvicorn[standard]>=0.24.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+httpx>=0.25.0
+requests>=2.31.0
+
+# ── AI / LLM ─────────────────────────────────────────────────────────────────
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+langgraph>=0.1.0
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.28.0
+
+# ── Search tools (optional – fallback mock data is used if unavailable) ───────
+duckduckgo-search>=5.0.0   # DuckDuckGo fallback (no API key needed)
+tavily-python>=0.3.0       # Tavily (requires TAVILY_API_KEY in .env)
